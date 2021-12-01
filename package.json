@@ -1,0 +1,27 @@
+{
+  "name": "adventofcode2021",
+  "version": "1.0.0",
+  "description": "My solutions to adventofcode2021 in TypeScript",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "esrun --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YourBrainEatsYou/adventofcode2021.git"
+  },
+  "keywords": [
+    "adventofcode"
+  ],
+  "author": "YourBrainEatsYou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YourBrainEatsYou/adventofcode2021/issues"
+  },
+  "homepage": "https://github.com/YourBrainEatsYou/adventofcode2021#readme",
+  "devDependencies": {
+    "@digitak/esrun": "^2.0.1",
+    "typescript": "^4.5.2"
+  }
+}
