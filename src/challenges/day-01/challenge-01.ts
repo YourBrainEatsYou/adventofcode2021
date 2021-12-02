@@ -27,6 +27,3 @@ export class Challenge01 extends Challenge {
     return countLargerMeasurements;
   }
 }
-
-
-// console.log('\x1b[32m%s\x1b[35m%s\x1b[0m', 'The Answer is: ', countLargerMeasurements);

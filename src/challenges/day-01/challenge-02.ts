@@ -30,4 +30,3 @@ export class Challenge02 extends Challenge {
     return countLargerMeasurements;
   }
 }
-
