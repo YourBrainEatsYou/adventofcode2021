@@ -1,8 +1,6 @@
+import { performance } from 'perf_hooks';
 import * as Challenges from './src/challenges';
-import {CliColors} from './src/utils/CliColors';
-import {performance} from 'perf_hooks';
-
-
+import { CliColors } from './src/utils/CliColors';
 
 const selectedChallenge = (process.argv[2] || '1').padStart(2, '0');
 

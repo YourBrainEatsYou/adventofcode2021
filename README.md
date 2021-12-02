@@ -43,4 +43,3 @@ $ npm run solve 4
 Challenge 03:    2039256 | took 2.779ms to compute
 Challenge 02: 1856459736 | took 2.997ms to compute
 ```
-
