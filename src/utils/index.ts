@@ -1,5 +1,5 @@
-import {FileReader} from './FileReader';
+import { FileReader } from './FileReader';
 
 export {
   FileReader,
-}
+};

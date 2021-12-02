@@ -1,5 +1,5 @@
-import {FileReader} from '../../utils';
-import {Challenge} from '../../utils/Challenge';
+import { FileReader } from '../../utils';
+import { Challenge } from '../../utils/Challenge';
 
 
 export class Challenge03 extends Challenge {

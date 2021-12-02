@@ -9,18 +9,18 @@ export class FileReader {
 
   constructor(
     day: number,
-    fileName: string = 'input.txt'
-  ){
+    fileName: string = 'input.txt',
+  ) {
     this.dayString = day.toString(10).padStart(2, '0');
     this.fileName = fileName;
   }
 
 
-  getFileAsString(): string{
+  getFileAsString(): string {
     return fs.readFileSync(`${this.rootPath}/src/challenges/day-${this.dayString}/${this.fileName}`, 'utf8');
   }
 
-  getFileAsArray(): string[]{
-    return this.getFileAsString().split("\n");
+  getFileAsArray(): string[] {
+    return this.getFileAsString().split('\n');
   }
 }

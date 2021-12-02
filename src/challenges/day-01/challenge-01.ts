@@ -1,11 +1,11 @@
-import {FileReader} from '../../utils';
-import {Challenge} from '../../utils/Challenge';
+import { FileReader } from '../../utils';
+import { Challenge } from '../../utils/Challenge';
 
-export class Challenge01 extends Challenge{
+export class Challenge01 extends Challenge {
 
   private input: number[];
 
-  constructor(){
+  constructor() {
     super();
     this.input = new FileReader(1)
       .getFileAsArray()
