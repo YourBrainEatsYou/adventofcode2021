@@ -1,8 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-type CommandType = 'forward' | 'down' | 'up';
-
 const __dirname = path.resolve() + '/challenges/day-02';
 
 // read the input file
@@ -11,24 +9,25 @@ const input = fs.readFileSync(__dirname + '/input.txt', 'utf8');
 // convert list to readable array
 const inputArray = input.split("\n").filter((val) => val !== '');
 
-// horizontal / depth
-const position = [0,0];
+// horizontal / depth / aim
+const position = [0, 0, 0];
 
 for (let command of inputArray){
   // split command in command & steps
   let cmd = command.split(' ');
 
-  console.log(cmd);
-
   switch (cmd[0]){
     case 'forward':
       position[0] += parseInt(cmd[1]);
+      position[1] += position[2] * parseInt(cmd[1]);
       break;
     case 'down':
-      position[1] += parseInt(cmd[1]);
+      // position[1] += parseInt(cmd[1]);
+      position[2] += parseInt(cmd[1]);
       break;
     case 'up':
-      position[1] -= parseInt(cmd[1]);
+      // position[1] -= parseInt(cmd[1]);
+      position[2] -= parseInt(cmd[1]);
       break;
   }
 }
