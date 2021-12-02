@@ -4,8 +4,8 @@
   "description": "My solutions to adventofcode2021 in TypeScript",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "esrun --watch"
+    "solve": "esrun index.ts",
+    "watch": "esrun --watch:./src/* index.ts"
   },
   "repository": {
     "type": "git",
