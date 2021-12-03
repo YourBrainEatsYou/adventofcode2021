@@ -50,10 +50,12 @@ Challenge 04: 1856459736 | took 2.997ms to compute
 
 ```
 $ npm run solve 5
+$ npm run solve 6
 ```
 
 #### Solutions
 
 ```
 Challenge 05: 3901196 | took 3.761ms to compute
+Challenge 06: 4412188 | took 3.785ms to compute
 ```
