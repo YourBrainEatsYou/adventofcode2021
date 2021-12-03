@@ -41,5 +41,19 @@ $ npm run solve 4
 
 ```
 Challenge 03:    2039256 | took 2.779ms to compute
-Challenge 02: 1856459736 | took 2.997ms to compute
+Challenge 04: 1856459736 | took 2.997ms to compute
+```
+
+### [Day 3: Binary Diagnostic!](https://adventofcode.com/2021/day/3)
+
+#### Commands
+
+```
+$ npm run solve 5
+```
+
+#### Solutions
+
+```
+Challenge 05: 3901196 | took 3.761ms to compute
 ```
