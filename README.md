@@ -66,10 +66,12 @@ Challenge 06: 4412188 | took 3.785ms to compute
 
 ```
 $ npm run solve 7
+$ npm run solve 8
 ```
 
 #### Solutions
 
 ```
 Challenge 07: 45031 | took 17.492ms to compute 
+Challenge 08:  2568 | took 21.878ms to compute 
 ```
