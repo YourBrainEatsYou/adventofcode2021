@@ -59,3 +59,17 @@ $ npm run solve 6
 Challenge 05: 3901196 | took 3.761ms to compute
 Challenge 06: 4412188 | took 3.785ms to compute
 ```
+
+### [Day 4: Giant Squid](https://adventofcode.com/2021/day/4)
+
+#### Commands
+
+```
+$ npm run solve 7
+```
+
+#### Solutions
+
+```
+Challenge 07: 45031 | took 17.492ms to compute 
+```

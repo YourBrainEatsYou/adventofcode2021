@@ -3,7 +3,7 @@ import { Challenge } from '../../utils/Challenge';
 
 export class Challenge05 extends Challenge {
 
-  private readonly input: number[][] = new FileReader(3, 'input.txt')
+  private readonly input: number[][] = new FileReader(3)
     .getFileAsArray()
     .filter((value) => value !== '')
     .map((value) => value.split('').map((val) => parseInt(val)));
