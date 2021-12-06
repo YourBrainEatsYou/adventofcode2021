@@ -91,3 +91,21 @@ $ npm run solve 10
 Challenge 09: 5145 | took 40.708ms to compute
 Challenge 10: 16518 | took 72.163ms to compute 
 ```
+
+### [Day 6: Lanternfish](https://adventofcode.com/2021/day/6)
+
+#### Commands
+
+```
+$ npm run solve 11
+$ npm run solve 12
+```
+
+#### Solutions
+
+```
+Challenge 11: 362346 | took 77.286ms to compute
+Challenge 12: 1639643057051 |  took 1.785ms to compute
+```
+
+thx [@stui](https://github.com/stuii): work smarter, not harder
