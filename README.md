@@ -89,5 +89,5 @@ $ npm run solve 10
 
 ```
 Challenge 09: 5145 | took 40.708ms to compute
-Challenge 10: 5145 | took 40.708ms to compute
+Challenge 10: 16518 | took 72.163ms to compute 
 ```
