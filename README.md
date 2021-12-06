@@ -75,3 +75,17 @@ $ npm run solve 8
 Challenge 07: 45031 | took 17.492ms to compute 
 Challenge 08:  2568 | took 21.878ms to compute 
 ```
+
+### [Day 5: Hydrothermal Venture](https://adventofcode.com/2021/day/5)
+
+#### Commands
+
+```
+$ npm run solve 9
+```
+
+#### Solutions
+
+```
+Challenge 09: 5145 | took 40.708ms to compute
+```
