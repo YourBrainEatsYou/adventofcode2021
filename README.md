@@ -82,10 +82,12 @@ Challenge 08:  2568 | took 21.878ms to compute
 
 ```
 $ npm run solve 9
+$ npm run solve 10
 ```
 
 #### Solutions
 
 ```
 Challenge 09: 5145 | took 40.708ms to compute
+Challenge 10: 5145 | took 40.708ms to compute
 ```
