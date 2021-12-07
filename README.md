@@ -1,4 +1,4 @@
-# adventofcode2021
+# 🎄 adventofcode2021
 
 My advent of code TypeScript solutions.
 
@@ -12,7 +12,7 @@ Solve a specific challenge with `$ npm run solve <numbe>`
 
 ## Challenges:
 
-### [Day 1: Sonar Sweep](https://adventofcode.com/2021/day/1)
+### 🔎 [Day 1: Sonar Sweep](https://adventofcode.com/2021/day/1)
 
 #### Commands
 
@@ -28,7 +28,7 @@ Challenge 01: 1696 | took 2.863ms to compute
 Challenge 02: 1737 | took 2.912ms to compute
 ```
 
-### [Day 2: Dive!](https://adventofcode.com/2021/day/2)
+### 🤿 [Day 2: Dive!](https://adventofcode.com/2021/day/2)
 
 #### Commands
 
@@ -44,7 +44,7 @@ Challenge 03:    2039256 | took 2.779ms to compute
 Challenge 04: 1856459736 | took 2.997ms to compute
 ```
 
-### [Day 3: Binary Diagnostic!](https://adventofcode.com/2021/day/3)
+### 📐 [Day 3: Binary Diagnostic!](https://adventofcode.com/2021/day/3)
 
 #### Commands
 
@@ -60,7 +60,7 @@ Challenge 05: 3901196 | took 3.761ms to compute
 Challenge 06: 4412188 | took 3.785ms to compute
 ```
 
-### [Day 4: Giant Squid](https://adventofcode.com/2021/day/4)
+### 🦑 [Day 4: Giant Squid](https://adventofcode.com/2021/day/4)
 
 #### Commands
 
@@ -76,7 +76,7 @@ Challenge 07: 45031 | took 17.492ms to compute
 Challenge 08:  2568 | took 21.878ms to compute 
 ```
 
-### [Day 5: Hydrothermal Venture](https://adventofcode.com/2021/day/5)
+### 🌡️ [Day 5: Hydrothermal Venture](https://adventofcode.com/2021/day/5)
 
 #### Commands
 
@@ -92,7 +92,7 @@ Challenge 09: 5145 | took 40.708ms to compute
 Challenge 10: 16518 | took 72.163ms to compute 
 ```
 
-### [Day 6: Lanternfish](https://adventofcode.com/2021/day/6)
+### 🍣 [Day 6: Lanternfish](https://adventofcode.com/2021/day/6)
 
 #### Commands
 
@@ -110,7 +110,7 @@ Challenge 12: 1639643057051 |  took 1.785ms to compute
 
 thx [@stui](https://github.com/stuii): work smarter, not harder
 
-### [Day 7: The Treachery of Whales](https://adventofcode.com/2021/day/7)
+### 🐳 [Day 7: The Treachery of Whales](https://adventofcode.com/2021/day/7)
 
 #### Commands
 
