@@ -109,3 +109,19 @@ Challenge 12: 1639643057051 |  took 1.785ms to compute
 ```
 
 thx [@stui](https://github.com/stuii): work smarter, not harder
+
+### [Day 7: The Treachery of Whales](https://adventofcode.com/2021/day/7)
+
+#### Commands
+
+```
+$ npm run solve 13
+$ npm run solve 14
+```
+
+#### Solutions
+
+```
+Challenge 13: 343468   | took 7.940ms to compute
+Challenge 14: 96086265 | took 12.122ms to compute, 1528.795ms without optimization 
+```
