@@ -10,7 +10,7 @@ Install the dependencies with `npm install`.
 
 Solve a specific challenge with `$ npm run solve <numbe>`
 
-## Challenges:
+## 🌋 Challenges:
 
 ### 🔎 [Day 1: Sonar Sweep](https://adventofcode.com/2021/day/1)
 
