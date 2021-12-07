@@ -2,7 +2,7 @@
 
 My advent of code TypeScript solutions.
 
-## Install and CLI
+## 💡 Install and CLI
 
 You'll only need nodeJs installed on your machine.
 
