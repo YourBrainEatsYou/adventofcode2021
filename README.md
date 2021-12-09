@@ -125,3 +125,17 @@ $ npm run solve 14
 Challenge 13: 343468   | took 7.940ms to compute
 Challenge 14: 96086265 | took 12.122ms to compute, 1528.795ms without optimization 
 ```
+
+### 🖥️ [Day 8: Seven Segment Search](https://adventofcode.com/2021/day/8)
+
+#### Commands
+
+```
+$ npm run solve 15
+```
+
+#### Solutions
+
+```
+Challenge 15: 284 | took 7.135ms to compute
+```
