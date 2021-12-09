@@ -1,4 +1,6 @@
 # 🎄 adventofcode2021
+![](https://img.shields.io/badge/stars%20⭐-4-yellow)
+![](https://img.shields.io/badge/days%20completed-2-red)
 
 My advent of code TypeScript solutions.
 
@@ -149,10 +151,12 @@ Challenge 16: 973499 | took 154.163ms to compute
 
 ```
 $ npm run solve 17
+$ npm run solve 18
 ```
 
 #### Solutions
 
 ```
-Challenge 17: 548 | took 12.147ms to compute
+Challenge 17: 548    | took 12.147ms to compute
+Challenge 18: 786048 | took 35.714ms to compute
 ```
