@@ -28,6 +28,7 @@ Challenge 01: 1696 | took 2.863ms to compute
 Challenge 02: 1737 | took 2.912ms to compute
 ```
 
+
 ### 🤿 [Day 2: Dive!](https://adventofcode.com/2021/day/2)
 
 #### Commands
@@ -140,4 +141,18 @@ $ npm run solve 16
 ```
 Challenge 15: 284    | took 7.135ms to compute
 Challenge 16: 973499 | took 154.163ms to compute
+```
+
+### 🚬 [Day 9: Smoke Basin](https://adventofcode.com/2021/day/9)
+
+#### Commands
+
+```
+$ npm run solve 17
+```
+
+#### Solutions
+
+```
+Challenge 17: 548 | took 12.147ms to compute
 ```
