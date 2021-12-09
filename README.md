@@ -132,10 +132,12 @@ Challenge 14: 96086265 | took 12.122ms to compute, 1528.795ms without optimizati
 
 ```
 $ npm run solve 15
+$ npm run solve 16
 ```
 
 #### Solutions
 
 ```
-Challenge 15: 284 | took 7.135ms to compute
+Challenge 15: 284    | took 7.135ms to compute
+Challenge 16: 973499 | took 154.163ms to compute
 ```

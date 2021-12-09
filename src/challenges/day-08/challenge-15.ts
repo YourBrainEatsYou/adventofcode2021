@@ -23,8 +23,6 @@ export default class Challenge15 implements Challenge {
           break;
       }
     }
-
-    console.log(countEasyNumbers);
     return countEasyNumbers;
   }
 }
