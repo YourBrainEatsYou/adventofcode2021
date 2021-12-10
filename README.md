@@ -160,3 +160,17 @@ $ npm run solve 18
 Challenge 17: 548    | took 12.147ms to compute
 Challenge 18: 786048 | took 35.714ms to compute
 ```
+
+### 🧠 [Day 10: Syntax Scoring](https://adventofcode.com/2021/day/10)
+
+#### Commands
+
+```
+$ npm run solve 19
+```
+
+#### Solutions
+
+```
+Challenge 19: 413733 | took 7.055ms to compute
+```
