@@ -167,10 +167,12 @@ Challenge 18: 786048 | took 35.714ms to compute
 
 ```
 $ npm run solve 19
+$ npm run solve 20
 ```
 
 #### Solutions
 
 ```
-Challenge 19: 413733 | took 7.055ms to compute
+Challenge 19: 413733     | took 7.055ms to compute
+Challenge 20: 3354640192 | took 10.502ms to compute
 ```
