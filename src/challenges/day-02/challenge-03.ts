@@ -2,7 +2,7 @@ import { FileReader } from '../../utils';
 import { Challenge } from '../../utils/Challenge';
 import { Command, CommandType, Position } from './interfaces';
 
-export class Challenge03 implements Challenge {
+export default class Challenge03 implements Challenge {
   private input: Command[] = new FileReader(2)
     .getFileAsArray()
     .filter((value) => value !== '')
