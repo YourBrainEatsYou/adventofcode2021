@@ -4,7 +4,6 @@ import { Cave } from './interfaces/Cave';
 
 
 export default class Challenge23 implements Challenge {
-
   START = 'start';
   END = 'end';
 

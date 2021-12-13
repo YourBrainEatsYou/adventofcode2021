@@ -1,7 +1,7 @@
 import { FileReader } from '../../utils';
 import { Challenge } from '../../utils/Challenge';
 
-export class Challenge05 implements Challenge {
+export default class Challenge05 implements Challenge {
 
   private readonly input: number[][] = new FileReader(3)
     .getFileAsArray()

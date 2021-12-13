@@ -1,7 +1,7 @@
 import { FileReader } from '../../utils';
 import { Challenge } from '../../utils/Challenge';
 
-export class Challenge02 implements Challenge {
+export default class Challenge02 implements Challenge {
   private readonly input: number[] = new FileReader(1)
     .getFileAsArray()
     .filter((val) => val !== '')

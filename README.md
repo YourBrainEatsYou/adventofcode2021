@@ -200,10 +200,12 @@ Challenge 22: 290  | took 14.273ms to compute
 
 ```
 $ npm run solve 23
+$ npm run solve 24
 ```
 
 #### Solutions
 
 ```
-Challenge 23: 3802 | took 10.490ms to compute 
+Challenge 23:  3802 | took 10.490ms to compute 
+Challenge 24: 99448 | took 239.827ms to compute 
 ```
