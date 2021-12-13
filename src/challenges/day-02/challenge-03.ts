@@ -14,7 +14,7 @@ export default class Challenge03 implements Challenge {
   private position: Position = {
     horizontal: 0,
     depth: 0,
-  }
+  };
 
   solve(): number {
     for (let command of this.input) {

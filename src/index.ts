@@ -13,15 +13,15 @@ import(`./challenges/day-${paddedDay}/challenge-${selectedChallenge}`).then(m =>
   const endTime = performance.now();
 
   console.log(`${CliColors.FgCyan}The answer to challenge`,
-    CliColors.FgMagenta+selectedChallenge,
+    CliColors.FgMagenta + selectedChallenge,
     `${CliColors.FgCyan}is: `,
-    CliColors.FgBlack+CliColors.BgGreen+' '+answer,
-    `${CliColors.Reset+CliColors.FgBlue} and took`,
+    CliColors.FgBlack + CliColors.BgGreen + ' ' + answer,
+    `${CliColors.Reset + CliColors.FgBlue} and took`,
     `${CliColors.FgYellow}${(endTime - startTime).toFixed(3)}ms`,
     `${CliColors.FgBlue}to compute`,
     CliColors.Reset,
   );
 }).catch((e) => {
   console.log(e);
-  console.log(CliColors.FgRed+'You have to write some code first!'+CliColors.Reset);
+  console.log(CliColors.FgRed + 'You have to write some code first!' + CliColors.Reset);
 });

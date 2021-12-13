@@ -15,7 +15,7 @@ export default class Challenge04 implements Challenge {
     horizontal: 0,
     depth: 0,
     aim: 0,
-  }
+  };
 
   solve(): number {
     for (let command of this.input) {

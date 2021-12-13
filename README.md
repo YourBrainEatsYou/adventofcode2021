@@ -1,4 +1,5 @@
 # 🎄 adventofcode2021
+
 ![](https://img.shields.io/badge/day%20📅-13-blue)
 ![](https://img.shields.io/badge/days%20completed-13-red)
 ![](https://img.shields.io/badge/stars%20⭐-26-yellow)
@@ -30,7 +31,6 @@ $ npm run solve 2
 Challenge 01: 1696 | took 2.863ms to compute 
 Challenge 02: 1737 | took 2.912ms to compute
 ```
-
 
 ### 🤿 [Day 2: Dive!](https://adventofcode.com/2021/day/2)
 

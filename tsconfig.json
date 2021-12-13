@@ -6,6 +6,6 @@
     "strict": true,
     "strictNullChecks": false,
     "moduleResolution": "node",
-    "esModuleInterop": true,
-  },
+    "esModuleInterop": true
+  }
 }
