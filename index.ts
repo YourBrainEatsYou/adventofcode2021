@@ -4,6 +4,7 @@ import { CliColors } from './src/utils/CliColors';
 
 const selectedChallenge = (process.argv[2] || '1').padStart(2, '0');
 
+
 if (Challenges['Challenge' + selectedChallenge]){
   const startTime = performance.now();
   const answer = new Challenges['Challenge' + selectedChallenge]().solve();
