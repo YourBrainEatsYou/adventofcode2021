@@ -1,12 +1,7 @@
 import { FileReader } from '../../utils';
 import { Challenge } from '../../utils/Challenge';
+import { Instruction } from './interfaces/Instruction';
 
-type Direction = 'x' | 'y'
-
-interface Instruction {
-  direction: Direction,
-  position: number,
-}
 
 export default abstract class Day13 implements Challenge {
   origami: boolean[][] = [];
