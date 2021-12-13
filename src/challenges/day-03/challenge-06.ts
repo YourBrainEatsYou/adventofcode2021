@@ -2,16 +2,17 @@ import { FileReader } from '../../utils';
 import { Challenge } from '../../utils/Challenge';
 
 export class Challenge06 implements Challenge {
-  private readonly input: number[][] = new FileReader(3)
+  private input: number[][] = new FileReader(3)
     .getFileAsArray()
     .filter((value) => value !== '')
     .map((value) => value.split('').map((val) => parseInt(val)));
 
   solve(): number {
-    let oxygenGeneratorRatingArray = this.input;
-    let co2ScrubberRatingArray = this.input;
+    let oxygenGeneratorRatingArray = [...this.input];
+    let co2ScrubberRatingArray = [...this.input];
 
     for (let position = 0; position < this.input[0].length; position += 1) {
+
       let oxyPositionCount = 0;
       let co2PositionCount = 0;
       if (oxygenGeneratorRatingArray.length > 1) {
@@ -29,6 +30,7 @@ export class Challenge06 implements Challenge {
       }
 
     }
+
     const oxygenGeneratorRating = parseInt(oxygenGeneratorRatingArray[0].join(''), 2);
     const co2ScrubberRating = parseInt(co2ScrubberRatingArray[0].join(''), 2);
 
