@@ -1,14 +1,14 @@
 import { FileReader } from '../../utils';
 import { Challenge } from '../../utils/Challenge';
 
-const BRACKETS = {
+const BRACKETS: { [key: string]: string } = {
   '(': ')',
   '[': ']',
   '{': '}',
   '<': '>',
 };
 
-const POINTS = {
+const POINTS: { [key: string]: number } = {
   ')': 3,
   ']': 57,
   '}': 1197,
@@ -22,7 +22,7 @@ export default class Challenge19 implements Challenge {
     .map((line) => line.split('').filter((line) => line !== ''));
 
   getFirstIllegalCharacter(line: string[]): string | null {
-    let closingStack = [];
+    let closingStack: string[] = [];
 
     for (let brace of line) {
       if (BRACKETS.hasOwnProperty(brace)) {

@@ -10,7 +10,7 @@ export default abstract class Day11 implements Challenge {
       .map((item) => parseInt(item)),
     );
 
-  increaseAdjacentOctopuses(x, y) {
+  increaseAdjacentOctopuses(x: number, y: number) {
     const adjacentMap = [
       [-1, -1], // top left
       [0, -1], // top

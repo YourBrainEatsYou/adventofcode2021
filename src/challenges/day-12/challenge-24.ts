@@ -16,7 +16,7 @@ export default class Challenge24 implements Challenge {
     entities: [],
   };
 
-  private possiblePaths = [];
+  private possiblePaths: string[][] = [];
 
   constructor() {
     // create Caves
@@ -70,7 +70,7 @@ export default class Challenge24 implements Challenge {
     return true;
   }
 
-  getChildRoutes(cave: Cave, trace) {
+  getChildRoutes(cave: Cave, trace: string[]) {
     trace = [...trace, cave.id];
     if (cave.id !== this.END) {
       const filteredConnections = cave.connections.filter((id) => id !== this.START);

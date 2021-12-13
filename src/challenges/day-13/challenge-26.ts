@@ -7,7 +7,7 @@ export default class Challenge26 extends Day13 {
       this.foldOrigami(instruction);
     }
 
-    this.displayOrigami(this.origami);
+    this.displayOrigami(this.origami, ['#', ' ']);
 
     return this.origami.flat(1).reduce((a, b) => b ? a + 1 : a, 0);
   }

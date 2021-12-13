@@ -5,7 +5,6 @@ export class FileReader {
 
   private dayString = '';
   private fileName = '';
-  private rootPath = path.resolve();
 
   constructor(
     day: number,
@@ -15,9 +14,8 @@ export class FileReader {
     this.fileName = fileName;
   }
 
-
   getFileAsString(): string {
-    return fs.readFileSync(`${this.rootPath}/src/challenges/day-${this.dayString}/${this.fileName}`, 'utf8');
+    return fs.readFileSync(path.resolve(path.join(__dirname, `../challenges/day-${this.dayString}/${this.fileName}`)), 'utf8');
   }
 
   getFileAsArray(): string[] {

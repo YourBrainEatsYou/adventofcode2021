@@ -45,8 +45,8 @@ export default abstract class Day13 implements Challenge {
     }
   }
 
-  displayOrigami(origami: boolean[][]) {
-    console.log(origami.map((line) => line.map((val) => val ? '#' : '.').join('')).join('\n'));
+  displayOrigami(origami: boolean[][], [set, unset]: [string, string] = ['#', '.']) {
+    console.log(origami.map((line) => line.map((val) => val ? set : unset).join('')).join('\n'));
   }
 
   foldOrigami(instruction: Instruction) {

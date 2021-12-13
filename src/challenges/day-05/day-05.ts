@@ -86,7 +86,7 @@ export default abstract class Day05 implements Challenge {
       }
     }
 
-    this.increaseOnMatrix(coordsArrayToDraw);
+    this.increaseOnMatrix(coordsArrayToDraw as Array<[number, number]>);
   }
 
   private drawDiagonalLine([fromX, fromY]: [number, number], [toX, toY]: [number, number]) {
@@ -100,7 +100,7 @@ export default abstract class Day05 implements Challenge {
       coordsArrayToDraw.push([...currentCoords]);
     }
 
-    this.increaseOnMatrix(coordsArrayToDraw);
+    this.increaseOnMatrix(coordsArrayToDraw as Array<[number, number]>);
   }
 
   private increaseOnMatrix(numbers: Array<[number, number]>): void {

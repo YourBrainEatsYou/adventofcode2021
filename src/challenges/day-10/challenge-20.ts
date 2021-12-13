@@ -1,14 +1,14 @@
 import { FileReader } from '../../utils';
 import { Challenge } from '../../utils/Challenge';
 
-const BRACKETS = {
+const BRACKETS: { [key: string]: string } = {
   '(': ')',
   '[': ']',
   '{': '}',
   '<': '>',
 };
 
-const POINTS = {
+const POINTS: { [key: string]: number } = {
   ')': 1,
   ']': 2,
   '}': 3,
@@ -22,7 +22,7 @@ export default class Challenge20 implements Challenge {
     .map((line) => line.split('').filter((line) => line !== ''));
 
   getClosingStack(line: string[]): string[] {
-    let closingStack = [];
+    let closingStack: string[] = [];
 
     for (let brace of line) {
       if (BRACKETS.hasOwnProperty(brace)) {

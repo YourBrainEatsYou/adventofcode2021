@@ -1,13 +1,15 @@
 import { performance } from 'perf_hooks';
-import * as Challenges from './src/challenges';
-import { CliColors } from './src/utils/CliColors';
+import { CliColors } from './utils/CliColors';
 
-const selectedChallenge = (process.argv[2] || '1').padStart(2, '0');
+const selectedChallenge: string = (process.argv[2] || '1').padStart(2, '0');
+const selectedChallengeInt: number = parseInt(selectedChallenge, 10);
 
+const dayInt = (selectedChallengeInt % 2 === 0) ? selectedChallengeInt / 2 : (selectedChallengeInt + 1) / 2;
+const paddedDay = dayInt.toString(10).padStart(2, '0');
 
-if (Challenges['Challenge' + selectedChallenge]){
+import(`./challenges/day-${paddedDay}/challenge-${selectedChallenge}`).then(m => {
   const startTime = performance.now();
-  const answer = new Challenges['Challenge' + selectedChallenge]().solve();
+  const answer = new m.default().solve();
   const endTime = performance.now();
 
   console.log(`${CliColors.FgCyan}The answer to challenge`,
@@ -19,6 +21,7 @@ if (Challenges['Challenge' + selectedChallenge]){
     `${CliColors.FgBlue}to compute`,
     CliColors.Reset,
   );
-}else{
+}).catch((e) => {
+  console.log(e);
   console.log(CliColors.FgRed+'You have to write some code first!'+CliColors.Reset);
-}
+});

@@ -40,14 +40,14 @@ export default abstract class Day04 implements Challenge{
     }
   }
 
-  markNumberOnCards(calledNumber){
+  markNumberOnCards(calledNumber: number){
     // search number in the boards
     for (let boardIndex = 0; boardIndex < this.boards.length; boardIndex += 1){
       this.markNumberOnCard(calledNumber, boardIndex)
     }
   }
 
-  markNumberOnCard(calledNumber, boardIndex){
+  markNumberOnCard(calledNumber: number, boardIndex: number){
     const board = this.boards[boardIndex];
     for(let rowIndex = 0; rowIndex < board.length; rowIndex += 1){
       const row = board[rowIndex];
@@ -71,7 +71,7 @@ export default abstract class Day04 implements Challenge{
     return null;
   }
 
-  checkIfBoardHasWon(boardIndex): boolean{
+  checkIfBoardHasWon(boardIndex: number): boolean{
     const board = this.boardsMarks[boardIndex];
 
     // check Rows (easy part) & prepare cols Array
@@ -98,7 +98,7 @@ export default abstract class Day04 implements Challenge{
     return false;
   }
 
-  addUnmarkedNumbers(boardIndex) {
+  addUnmarkedNumbers(boardIndex: number) {
     let sum: number = 0;
     const board = this.boards[boardIndex];
     const markings = this.boardsMarks[boardIndex];
