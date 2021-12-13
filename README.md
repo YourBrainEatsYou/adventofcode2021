@@ -177,3 +177,19 @@ $ npm run solve 20
 Challenge 19: 413733     | took 7.055ms to compute
 Challenge 20: 3354640192 | took 10.502ms to compute
 ```
+
+### 🐘 [Day 11: Dumbo Octopus](https://adventofcode.com/2021/day/11)
+
+#### Commands
+
+```
+$ npm run solve 21
+$ npm run solve 22
+```
+
+#### Solutions
+
+```
+Challenge 21: 1732 | took 9.943ms to compute 
+Challenge 22: 290  | took 14.273ms to compute  
+```
