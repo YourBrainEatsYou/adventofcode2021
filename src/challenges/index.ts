@@ -10,6 +10,7 @@ import { Challenge17, Challenge18 } from './day-09';
 import { Challenge19, Challenge20 } from './day-10';
 import { Challenge21, Challenge22 } from './day-11';
 import { Challenge23, Challenge24 } from './day-12';
+import { Challenge25, Challenge26 } from './day-13';
 
 export {
   Challenge01,
@@ -36,4 +37,6 @@ export {
   Challenge22,
   Challenge23,
   Challenge24,
+  Challenge25,
+  Challenge26,
 };

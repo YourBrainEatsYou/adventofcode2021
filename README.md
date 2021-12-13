@@ -209,3 +209,19 @@ $ npm run solve 24
 Challenge 23:  3802 | took 10.490ms to compute 
 Challenge 24: 99448 | took 239.827ms to compute 
 ```
+
+### 📑 [Day 13: Transparent Origami](https://adventofcode.com/2021/day/13)
+
+#### Commands
+
+```
+$ npm run solve 25
+$ npm run solve 26
+```
+
+#### Solutions
+
+```
+Challenge 25: 689      | took 133.829ms to compute 
+Challenge 26: RLBCJGLU | took 71.283ms to compute  
+```
