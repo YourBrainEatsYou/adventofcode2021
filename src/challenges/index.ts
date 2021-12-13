@@ -17,7 +17,7 @@ export {
   Challenge03,
   Challenge04,
   Challenge05,
-//  Challenge06, ToDo: implement bettfer fix to run the 23er task...
+//  Challenge06, ToDo: implement better fix to run the 23er task...
   Challenge07,
   Challenge08,
   Challenge09,
