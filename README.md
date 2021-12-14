@@ -232,10 +232,12 @@ Challenge 26: RLBCJGLU | took 71.283ms to compute
 
 ```
 $ npm run solve 27
+$ npm run solve 28
 ```
 
 #### Solutions
 
 ```
-Challenge 25: 3555 | took 11.811ms to compute
+Challenge 27: 3555          | took 11.811ms to compute
+Challenge 28: 4439442043739 | took 5.317ms to compute 
 ```
