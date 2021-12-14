@@ -33,7 +33,7 @@ export default class Challenge27 implements Challenge {
   }
 
   solve(): number {
-    const numOfSteps = 40;
+    const numOfSteps = 10;
 
     for (let step = 0; step < numOfSteps; step += 1) {
       this.template = this.template.reduce((prev: string[], current: string) => {
