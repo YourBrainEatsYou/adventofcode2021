@@ -225,3 +225,17 @@ $ npm run solve 26
 Challenge 25: 689      | took 133.829ms to compute 
 Challenge 26: RLBCJGLU | took 71.283ms to compute  
 ```
+
+### 🧪 [Day 14: Extended Polymerization](https://adventofcode.com/2021/day/14)
+
+#### Commands
+
+```
+$ npm run solve 27
+```
+
+#### Solutions
+
+```
+Challenge 25: 3555 | took 11.811ms to compute
+```
