@@ -48,8 +48,6 @@ export default class Challenge27 implements Challenge {
       }, []);
     }
 
-    console.log(this.template.length);
-
     return this.calculateElements(this.template);
   }
 }
