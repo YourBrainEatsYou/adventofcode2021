@@ -2,7 +2,7 @@ import Day15 from './day-15';
 import { Node } from './interfaces/Node';
 
 
-export default class Challenge29 extends Day15 {
+export default class Challenge30 extends Day15 {
 
   createMap(): Node[][] {
     const map = [];

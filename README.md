@@ -241,3 +241,18 @@ $ npm run solve 28
 Challenge 27: 3555          | took 11.811ms to compute
 Challenge 28: 4439442043739 | took 5.317ms to compute 
 ```
+
+### 🐠 [Day 15: Chiton](https://adventofcode.com/2021/day/15)
+
+#### Commands
+
+```
+$ npm run solve 29
+$ npm run solve 30
+```
+
+#### Solutions
+
+```
+Challenge 29: 602 | took 1390.653ms to compute
+```
