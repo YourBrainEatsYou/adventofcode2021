@@ -1,8 +1,8 @@
 # 🎄 adventofcode2021
 
 ![](https://img.shields.io/badge/day%20📅-16-blue)
-![](https://img.shields.io/badge/days%20completed-14-red)
-![](https://img.shields.io/badge/stars%20⭐-29-yellow)
+![](https://img.shields.io/badge/days%20completed-15-red)
+![](https://img.shields.io/badge/stars%20⭐-30-yellow)
 
 My advent of code TypeScript solutions.
 
