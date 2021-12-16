@@ -1,6 +1,11 @@
 import { FileReader } from '../../utils';
 import { Challenge } from '../../utils/Challenge';
 
+interface Pointer{
+  index: number;
+  value: number;
+}
+
 export default class Challenge32 implements Challenge {
   readonly input: string = new FileReader(16)
     .getFileAsArray()
@@ -12,151 +17,83 @@ export default class Challenge32 implements Challenge {
     )
     .shift();
 
-  transmission: string = this.input;
+  parseNextPackage(index: number): Pointer {
+    const packageType = parseInt(this.input.slice(index + 3, index += 6),2);
 
-  getPacketVersion(): number {
-    return parseInt(this.transmission.slice(0, 3), 2);
+    if(packageType === 4){
+      // is Literal
+      return this.parseLiteral(index);
+    } else {
+      // is Operator
+      return this.parseOperator(index, packageType);
+    }
   }
 
-  getPacketType(): number {
-    return parseInt(this.transmission.slice(3, 6), 2);
-  }
-
-  removeIdAndType(): number {
-    this.transmission = this.transmission.slice(6);
-    return 6;
-  }
-
-
-  parseLiteral(): { bits: number, result: number } {
-    let literal = '';
-    let bitsRemoved = 0;
-    // remove packageVersion and Type
-    bitsRemoved += this.removeIdAndType();
-
+  parseLiteral(index: number): Pointer {
     let hasMore = true;
+    let literal = '';
+
     while (hasMore) {
-      const literalByte = parseInt(this.transmission.slice(0, 5), 2);
-      this.transmission = this.transmission.slice(5);
-      bitsRemoved += 5;
+      const literalByte = parseInt(this.input.slice(index, index += 5), 2);
 
       literal += ((literalByte & 15)).toString(2).padStart(4, '0');
       hasMore = !!(literalByte & 16);
     }
-    console.log('lit: ', parseInt(literal, 2));
     return {
-      bits: bitsRemoved,
-      result: parseInt(literal, 2),
-    };
+      index,
+      value: parseInt(literal, 2),
+    }
   }
 
-  * loop(length: 15 | 11, packageLength: number): Generator<{ bits: number, result: number }> {
-    let bitsParsed = 0;
+  parseOperator(index: number, packageType: number): Pointer {
+    const lengthId: 11 | 15 = this.input.slice(index, index += 1) === '0' ? 15 : 11;
+    const lengthCounter = parseInt(this.input.slice(index, index += lengthId), 2);
+    const values = [];
+    let value: number = 0;
 
-    if (length === 11) {
-      for (let iteration = 0; iteration < packageLength; iteration += 1) {
-        yield this.parseNextPackage();
+    if(lengthId === 15){
+      const endIndex = index + lengthCounter;
+      while (index < endIndex){
+        let { index: newIndex, value} = this.parseNextPackage(index);
+        index = newIndex;
+        values.push(value);
       }
     } else {
-      while (bitsParsed < packageLength) {
-        let packageResult = this.parseNextPackage();
-        bitsParsed += packageResult.bits;
-        yield packageResult;
+      while(values.length < lengthCounter){
+        let { index: newIndex, value} = this.parseNextPackage(index);
+        index = newIndex;
+        values.push(value);
       }
     }
-  }
 
-  parseOperator(packageType: number): { bits: number, result: number } {
-    let bitsRemoved = 0;
-
-    bitsRemoved += this.removeIdAndType();
-
-    let result = 0;
-
-    const length = this.transmission.slice(0, 1) === '0' ? 15 : 11;
-    this.transmission = this.transmission.slice(1);
-    bitsRemoved += 1;
-
-    const packageLength = parseInt(this.transmission.slice(0, length), 2);
-    this.transmission = this.transmission.slice(length);
-    bitsRemoved += length;
-
-    let iter = this.loop(length, packageLength);
-    let current;
-
+    // parse Operations
     switch (packageType) {
       case 0: // sum
-        result = 0;
-        current = iter.next();
-        while (!current.done) {
-          result += current.value.result;
-          current = iter.next();
-        }
-        break;
+        value = values.reduce((a, b) => a + b, 0);
+       break;
       case 1: // product
-        result = 1;
-        current = iter.next();
-        while (!current.done) {
-          result *= current.value.result;
-          current = iter.next();
-        }
+        value = values.reduce((a, b) => a * b, 1);
         break;
       case 2: // min
-        result = Infinity;
-        current = iter.next();
-
-        while (!current.done) {
-          result = current.value.result < result ? current.value.result : result;
-          current = iter.next();
-        }
+        value = Math.min(...values);
         break;
       case 3: // max
-        current = iter.next();
-        while (!current.done) {
-          result = current.value.result > result ? current.value.result : result;
-          current = iter.next();
-        }
+        value = Math.max(...values);
         break;
       case 5: // greater than >
-        result = 0;
-        if (this.parseNextPackage().result > this.parseNextPackage().result) {
-          result = 1;
-        }
+        value = +(values[0] > values[1]);
         break;
       case 6: // less than <
-        result = 0;
-        if (this.parseNextPackage().result < this.parseNextPackage().result) {
-          result = 1;
-        }
+        value = +(values[0] < values[1]);
         break;
       case 7: // equal =
-        result = 0;
-        if (this.parseNextPackage().result == this.parseNextPackage().result) {
-          result = 1;
-        }
+        value = +(values[0] === values[1]);
         break;
     }
-
-    return {
-      bits: bitsRemoved,
-      result,
-    };
-  }
-
-  parseNextPackage(): { bits: number, result: number } {
-    let packageType = this.getPacketType();
-
-    // throw new Error(packageType.toString());
-
-    switch (packageType) {
-      case 4:
-        return this.parseLiteral();
-      default:
-        return this.parseOperator(packageType);
-    }
+    return { index, value };
   }
 
   solve(): number {
-    return this.parseNextPackage().result;
+    return this.parseNextPackage(0).value;
   }
 }
