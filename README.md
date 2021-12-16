@@ -92,7 +92,7 @@ $ npm run solve 10
 #### Solutions
 
 ```
-Challenge 09: 5145 | took 40.708ms to compute
+Challenge 09:  5145 | took 40.708ms to compute
 Challenge 10: 16518 | took 72.163ms to compute 
 ```
 
@@ -108,8 +108,8 @@ $ npm run solve 12
 #### Solutions
 
 ```
-Challenge 11: 362346 | took 77.286ms to compute
-Challenge 12: 1639643057051 |  took 1.785ms to compute
+Challenge 11:        362346 | took 77.286ms to compute
+Challenge 12: 1639643057051 | took  1.785ms to compute
 ```
 
 thx [@stui](https://github.com/stuii): work smarter, not harder
@@ -126,8 +126,9 @@ $ npm run solve 14
 #### Solutions
 
 ```
-Challenge 13: 343468   | took 7.940ms to compute
-Challenge 14: 96086265 | took 12.122ms to compute, 1528.795ms without optimization 
+Challenge 13:   343468 | took    7.940ms to compute
+Challenge 14: 96086265 | took   12.122ms to compute, 
+                              1528.795ms without optimization 
 ```
 
 ### 🖥️ [Day 8: Seven Segment Search](https://adventofcode.com/2021/day/8)
@@ -142,7 +143,7 @@ $ npm run solve 16
 #### Solutions
 
 ```
-Challenge 15: 284    | took 7.135ms to compute
+Challenge 15:    284 | took   7.135ms to compute
 Challenge 16: 973499 | took 154.163ms to compute
 ```
 
@@ -158,7 +159,7 @@ $ npm run solve 18
 #### Solutions
 
 ```
-Challenge 17: 548    | took 12.147ms to compute
+Challenge 17:    548 | took 12.147ms to compute
 Challenge 18: 786048 | took 35.714ms to compute
 ```
 
@@ -174,7 +175,7 @@ $ npm run solve 20
 #### Solutions
 
 ```
-Challenge 19: 413733     | took 7.055ms to compute
+Challenge 19:     413733 | took  7.055ms to compute
 Challenge 20: 3354640192 | took 10.502ms to compute
 ```
 
@@ -190,8 +191,8 @@ $ npm run solve 22
 #### Solutions
 
 ```
-Challenge 21: 1732 | took 9.943ms to compute 
-Challenge 22: 290  | took 14.273ms to compute  
+Challenge 21: 1732 | took  9.943ms to compute 
+Challenge 22:  290 | took 14.273ms to compute  
 ```
 
 ### 🗺 [Day 12: Passage Pathing](https://adventofcode.com/2021/day/12)
@@ -206,7 +207,7 @@ $ npm run solve 24
 #### Solutions
 
 ```
-Challenge 23:  3802 | took 10.490ms to compute 
+Challenge 23:  3802 | took  10.490ms to compute 
 Challenge 24: 99448 | took 239.827ms to compute 
 ```
 
@@ -222,8 +223,8 @@ $ npm run solve 26
 #### Solutions
 
 ```
-Challenge 25: 689      | took 133.829ms to compute 
-Challenge 26: RLBCJGLU | took 71.283ms to compute  
+Challenge 25:      689 | took 133.829ms to compute 
+Challenge 26: RLBCJGLU | took  71.283ms to compute  
 ```
 
 ### 🧪 [Day 14: Extended Polymerization](https://adventofcode.com/2021/day/14)
@@ -238,8 +239,8 @@ $ npm run solve 28
 #### Solutions
 
 ```
-Challenge 27: 3555          | took 11.811ms to compute
-Challenge 28: 4439442043739 | took 5.317ms to compute 
+Challenge 27:          3555 | took 11.811ms to compute
+Challenge 28: 4439442043739 | took  5.317ms to compute 
 ```
 
 ### 🐠 [Day 15: Chiton](https://adventofcode.com/2021/day/15)
@@ -254,8 +255,8 @@ $ npm run solve 30
 #### Solutions
 
 ```
-Challenge 29:  602 | took 1390.653ms to compute
-Challenge 29: 2935 | took 923900.214ms (~15min) to compute 
+Challenge 29:  602 | took   1390.653ms to compute
+Challenge 30: 2935 | took 923900.214ms (~15min) to compute 
 ```
 
 ### ☎️ [Day 16: Packet Decoder](https://adventofcode.com/2021/day/16)
@@ -270,7 +271,7 @@ $ npm run solve 32
 #### Solutions
 
 ```
-Challenge 31:  963 | took 2.143ms to compute
+Challenge 31:            963 | took 1.884ms to compute
 Challenge 32:  1549026292886 | took 1.855ms to compute
 ```
 
