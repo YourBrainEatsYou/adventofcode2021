@@ -11,7 +11,7 @@ const neighbourList = [
 
 export default abstract class Day15 implements Challenge {
 
-  readonly input: number[][] = new FileReader(15, 'test-input2.txt')
+  readonly input: number[][] = new FileReader(15)
     .getFileAsArray()
     .filter((line) => line !== '')
     .map((line) => line.split('')
@@ -42,6 +42,7 @@ export default abstract class Day15 implements Challenge {
   solve(): number {
     const start = this.map[0][0];
     const end = this.map[this.map.length - 1][this.map[0].length - 1];
+
 
     let winningNode: Node;
     let openList = [start.id];
@@ -100,12 +101,6 @@ export default abstract class Day15 implements Challenge {
     }
 
     let riskLevel = null;
-    /*if (winningNode){
-      let node = winningNode
-      while(node.parent) {
-        node = node.parent;
-      }
-    }*/
     if (winningNode) {
       riskLevel = winningNode.g;
     }

@@ -254,5 +254,6 @@ $ npm run solve 30
 #### Solutions
 
 ```
-Challenge 29: 602 | took 1390.653ms to compute
+Challenge 29:  602 | took 1390.653ms to compute
+Challenge 29: 2935 | took 923900.214ms to compute 
 ```
