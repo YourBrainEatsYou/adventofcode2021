@@ -257,3 +257,18 @@ $ npm run solve 30
 Challenge 29:  602 | took 1390.653ms to compute
 Challenge 29: 2935 | took 923900.214ms to compute 
 ```
+
+### ☎️ [Day 16: Packet Decoder](https://adventofcode.com/2021/day/16)
+
+#### Commands
+
+```
+$ npm run solve 31
+```
+
+#### Solutions
+
+```
+Challenge 31:  963 | took 2.143ms to compute
+```
+
