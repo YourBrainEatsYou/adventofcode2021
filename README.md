@@ -271,7 +271,22 @@ $ npm run solve 32
 #### Solutions
 
 ```
-Challenge 31:            963 | took 1.884ms to compute
-Challenge 32:  1549026292886 | took 1.855ms to compute
+Challenge 31:           963 | took 1.884ms to compute
+Challenge 32: 1549026292886 | took 1.855ms to compute
 ```
 
+### 🗝 [Day 17: Trick Shot](https://adventofcode.com/2021/day/17)
+
+#### Commands
+
+```
+$ npm run solve 33
+$ npm run solve 34
+```
+
+#### Solutions
+
+```
+Challenge 33: 3655 | took 3837.729ms to compute
+Challenge 34: 1447 | took 3748.563ms to compute
+```
