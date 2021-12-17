@@ -275,7 +275,7 @@ Challenge 31:           963 | took 1.884ms to compute
 Challenge 32: 1549026292886 | took 1.855ms to compute
 ```
 
-### 🗝 [Day 17: Trick Shot](https://adventofcode.com/2021/day/17)
+### 🥤 [Day 17: Trick Shot](https://adventofcode.com/2021/day/17)
 
 #### Commands
 
